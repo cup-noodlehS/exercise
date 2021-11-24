@@ -1,1 +1,15 @@
+def fibonnaci(number):
+    first = 1
+    second = 1
+    next = 0
+    fibonnaci_list = []
+    for i in range(number):
+        next = first + second
+        fibonnaci_list.append(first)
+        first = second
+        second = next
 
+    return fibonnaci_list
+
+
+print(fibonnaci(10))
